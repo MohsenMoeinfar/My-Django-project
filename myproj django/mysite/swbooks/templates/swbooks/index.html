@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "swbooks/index/style.css" %}
+    <title></title>
+</head>
+<body> 
+  <ul>
+    <li><a href="#لیست">list of the books</a></li>
+    <li><a href=/ >Home</a></li>
+  </ul>
+  <h1>لیست کتاب های ثبت شده </h1>
+  
+    <table  border="300" width="1500" height="800" >
+      
+        <thead>
+          <tr>
+            <th scope="col">bookname</th>
+            <th scope="col">author</th>
+            <th scope="col">your_name</th>
+            <th scope="col">your_lastname</th>
+            <th scope="col">your_university</th>
+            <th scope="col">your_college</th>
+            <th scope="col">tel_id</th>
+            <th scope="col">detail</th>
+            <th scope="col">you_are</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          
+            {%for book in books%}
+          <tr>
+            
+            
+            <th scope="row">{{book.bookname}}</th>
+            <td  bgcolor="white" align="center">{{book.author}}</td>
+            <td bgcolor="pink" align="center">{{book.your_name}}</td>
+            <td bgcolor="pink" align="center">{{book.your_lastname}}</td>
+            <td bgcolor="orange" align="center">{{book.your_university}}</td>
+            <td  bgcolor="orange" align="center">{{book.your_college}}</td>
+            <td  bgcolor="pink" align="center">{{book.tel_id}}</td>
+            <td bgcolor="green" align="center">{{book.detail}}</td>
+            <td bgcolor="gray" align="center">{{book.you_are}}</td>
+          </tr>
+          {%endfor%}
+        </tbody>
+      </table>
+    
+</body>
+</html>

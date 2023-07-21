@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        
+        body {
+          background-color: rgba(56, 221, 158, 0.253);
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "swbooks/form/style.css" %}
+    <title></title>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#form">please add your book</a></li>
+        <li><a href=/ >Home</a></li>
+    </ul>
+    <h1>فرم زیر را2 پر کنید</h1>
+    
+    
+
+
+
+    <form action="/swbooks/add_book/" method = "post">
+    {% csrf_token %} 
+    <label for=" bookname">Bookname</label><br>
+    <input type="text" id = "bookname" name= "bookname"><br>
+    <label for=" author">Author</label><br>
+    <input type="text" id = "author" name= "author"><br>
+    <label for=" your_name">Your_name</label><br>
+    <input type="text" id = "your_name" name= "your_name"><br>
+    <label for=" your_lastname">Your_lastname</label><br>
+    <input type="text" id = "your_lastname" name= "your_lastname"><br>
+    <label for=" your_university">Your_university</label><br>
+    <input type="text" id = "your_university" name= "your_university"><br>
+    <label for=" your_college">Your_college</label><br>
+    <input type="text" id = "your_college" name= "your_college"><br>
+    <label for=" tel_id">Tel_id</label><br>
+    <input type="text" id = "tel_id" name= "tel_id"><br>
+    <label for=" detail">Detail</label><br>
+    <input type="text" id = "detail" name= "detail"><br>
+    <label for=" you_are">You_are</label><br>
+    <select class="form-control" name="you_are" id="you_are">
+        <option> buyer </option>
+        <option> seller </option>
+    </select>
+    <input type="submit" value="submit">
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.welcome h2 {
+   font-size: 60px;
+   
+   background-color:bisque;
+   
+   height:90px;
+   text-align: center;
+   margin-top: 7px;
+}
+
+.welcome p{
+   font-size: 30px;
+   background-color:rgb(196, 255, 242);
+   text-align: center;
+   margin-top: 60px;
+}
+
+.f1 input[type = submit] {
+   font-size: 20px;
+   background-color: #3e192d; /* Green background */
+   border: 1px solid rgb(167, 218, 40); /* Green border */
+   color: white; /* White text */
+   padding: 30px 34px; /* Some padding */
+   cursor: pointer; /* Pointer/hand icon */
+   float: left; /* Float the buttons side by side */
+   margin-left: 350px;
+   border-radius: 25px;
+
+ }
+
+ .f2 input[type = submit] {
+   font-size: 20px;
+   background-color: #3e192d; /* Green background */
+   border: 1px solid rgb(167, 218, 40); /* Green border */
+   color: white; /* White text */
+   padding: 30px 34px; /* Some padding */
+   cursor: pointer; /* Pointer/hand icon */
+   float: left; /* Float the buttons side by side */
+   margin-left: 69px;
+   border-radius: 25px;
+ }
+.welcome {
+   background-image: url(/static/media/image12.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width:1520px;
+   height:723px;
+   margin:0;
+   overflow:hidden;
+  
+}
+
+
